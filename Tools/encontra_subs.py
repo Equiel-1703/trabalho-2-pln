@@ -54,7 +54,7 @@ while True:
     substring = partes[1]
 
     # Encontre os índices da substring no texto
-    texto = file_to_search[indice_texto][0]
+    texto = file_to_search[indice_texto][0] if isinstance(file_to_search[indice_texto], list) else file_to_search[indice_texto]['text']
     indices = encontrar_indices(texto, substring)
 
     print()
