@@ -1,5 +1,5 @@
 import sys
-from dados_treinamento import dados_treinamento
+from training_data import training_data
 
 def encontrar_indices(texto, substring):
     #vamos encontrar todas as ocorrências da substring no texto
@@ -23,7 +23,7 @@ indice_texto = sys.argv[1]
 substring = sys.argv[2]
 
 # Encontre os índices da substring no texto
-texto = dados_treinamento[int(indice_texto)]['text']
+texto = training_data[int(indice_texto)]['text']
 indices = encontrar_indices(texto, substring)
 
 print(f'Texto: {texto}')

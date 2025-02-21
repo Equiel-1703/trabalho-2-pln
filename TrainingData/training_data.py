@@ -1,4 +1,6 @@
-dados_treinamento = [
+tags = ["PROG_LANG", "FRAMEWORK", "ALGORITHM", "LIBRARY"]
+
+training_data = [
     {
         "text": "Para a comparação entre os métodos, foi utilizado a linguagem C para a implementação, junto com a biblioteca Open Multi-Processing [ope 2019] para a paralelização dos algorit-mos e a biblioteca Gnu Scientific Library [gsl 2019] para a estrutura de dados que contém matrizes e vetores, além das funções próprias de cálculo numérico.",
         "entities": [
@@ -291,8 +293,15 @@ dados_treinamento = [
         "entities": [[31 , 41 , "ALGORITHM"], [43 , 53 , "ALGORITHM"], [56 , 66 ,"ALGORITHM"]],
     },
     {
-        "text": "OpenCL includes a C99-based language for writing kernel code, and the host program can be written in other languages such as: C/C++, Java and Python.",
-        "entities": [[0, 6, "LIBRARY"], [18 , 21 , "PROG_LANG"], [126, 127, "PROG_LANG"], [128 , 131 , "PROG_LANG"], [ 133 , 137 , "PROG_LANG"], [142 , 148 , "PROG_LANG"]],
+        "text": "OpenCL includes a C99 based language for writing kernel code, and the host program can be written in other languages such as: C/C++, Java and Python.",
+        "entities": [
+            [0, 6, "LIBRARY"], # OpenCL
+            [18 , 21 , "PROG_LANG"], # C99
+            [126, 127, "PROG_LANG"], # C
+            [128 , 131 , "PROG_LANG"], # C++
+            [133 , 137 , "PROG_LANG"], # Java
+            [142 , 148 , "PROG_LANG"] # Python
+        ],
     },
     {
         "text": "O Nó mais usado para programação é o nó function onde é inserido um código JavaScript, no qual ele pode retornar vários valores em saídas diferentes permitindo o controle de fluxo.",
@@ -309,7 +318,7 @@ dados_treinamento = [
 ]
 
 if __name__ == '__main__':
-    for element in dados_treinamento:
+    for element in training_data:
         text = element['text']
         entities = element['entities']
 
