@@ -43,6 +43,7 @@ if __name__ == "__main__":
         losses = {}
         nlp.update(examples, drop=0.5, losses=losses)
 
+    OUTPUT += '_' + str(epochs) 
     nlp.to_disk(OUTPUT)
 
     print(f"Modelo treinado e salvo em {OUTPUT}/")

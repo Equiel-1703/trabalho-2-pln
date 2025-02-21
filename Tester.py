@@ -87,7 +87,7 @@ def format_score(score):
 
 VERBOSE = False
 
-print(f"Spacy version: {spacy.__version__}")
+print(f"Spacy versão: {spacy.__version__}")
 
 if len(sys.argv) > 1:
     if sys.argv[1] == "-v" or sys.argv[1] == "--verbose":
