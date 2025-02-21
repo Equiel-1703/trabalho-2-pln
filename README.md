@@ -9,7 +9,7 @@ Este projeto é uma prova de conceito, portanto o conjunto de dados usado foi mu
 ## Instruções de Execução
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/henrique/trabalho-2-pln.git
+    git clone https://github.com/Equiel-1703/trabalho-2-pln.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
