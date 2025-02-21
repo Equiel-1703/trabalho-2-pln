@@ -1,26 +1,26 @@
 test_data = [
     (
-        "O PyTorch é um framework popular.",
+        "O OpenMP é uma biblioteca popular.",
         {
             "entities": [
-                (2, 9, "FRAMEWORK")
+                (2, 8, "LIBRARY")
             ]
         }
     ),
     (
-        "O algoritmo A* é usado em IA.",
+        "O algoritmo Bubble Sort é um dos mais simples.",
         {
             "entities": [
-                (12, 14, "ALGORITHM")
+                (12, 23, "ALGORITHM")
             ]
         }
     ),
     (
-        "O PyTorch e TensorFlow são frameworks poderosos para deep learning em Python.",
+        "Pthreads e OpenMP são bibliotecas de programação paralela.",
         {
             "entities": [
-                (2, 9, "FRAMEWORK"),
-                (12, 22, "FRAMEWORK")
+                (0, 8, "LIBRARY"),
+                (11, 17, "LIBRARY")
             ]
         }
     ),
@@ -33,7 +33,7 @@ test_data = [
         }
     ), # OK 3
     (
-        "A biblioteca Pandas facilita a manipulação de dados.",
+        "A biblioteca OpenCL é usada para programação de GPUs.",
         {
             "entities": [
                 (13, 19, "LIBRARY")

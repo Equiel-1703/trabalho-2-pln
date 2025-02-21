@@ -318,7 +318,10 @@ training_data = [
 ]
 
 if __name__ == '__main__':
+    training_data_size = 0
+
     for element in training_data:
+        training_data_size += 1
         text = element['text']
         entities = element['entities']
 
@@ -330,3 +333,5 @@ if __name__ == '__main__':
             print(f'ENTIDADE: "{text[first_index:last_index]}" ({first_index}, {last_index}, {entity[2]})')
         
         print()
+    
+    print(f'Training data size: {training_data_size}')
